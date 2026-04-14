@@ -7,11 +7,11 @@ import './App.css';
 export default function App() {
 
  const images = [
-  "/src/assets/img1.jpg",
-  "/src/assets/img2.jpeg",
-  "/src/assets/img3.jpeg",
-  "/src/assets/img4.jpeg",
-  "/src/assets/img5.jpeg"
+  "https://github.com/ajitdikshit/16april/blob/main/src/assets/img1.jpg?raw=true",
+  "https://github.com/ajitdikshit/16april/blob/main/src/assets/img2.jpeg?raw=true",
+  "https://github.com/ajitdikshit/16april/blob/main/src/assets/img3.jpeg?raw=true",
+  "https://github.com/ajitdikshit/16april/blob/main/src/assets/img4.jpeg?raw=true",
+  "https://github.com/ajitdikshit/16april/blob/main/src/assets/img5.jpeg?raw=true"
 ];
 
 const transformStyles = [
