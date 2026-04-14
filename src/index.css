@@ -1,7 +1,19 @@
+@font-face {
+  font-family: 'CustomFont'; 
+  /* The path below assumes index.css and the assets folder are both in /src */
+  src: url('./assets/custom.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 body{
   background-color: lightpink;
+  background-image: URL("https://imgs.search.brave.com/UcWIFNqU4IzuUPcChqdzmgU7wD5EDQJSR7hBMVbCnfc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93MC5w/ZWFrcHguY29tL3dh/bGxwYXBlci84NTcv/ODU2L0hELXdhbGxw/YXBlci1waW5rLXJl/dHJvLXRleHR1cmUt/d2l0aC1oZWFydHMt/cGluay1oZWFydHMt/dGV4dHVyZS1sb3Zl/LXRleHR1cmUtcGlu/ay1oZWFydHMtYmFj/a2dyb3VuZC10aHVt/Ym5haWwuanBn");
 }
 *{
+  
+   
+   background-repeat: repeat;
+   
   margin: 0;
   padding: 0;
 }

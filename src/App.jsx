@@ -4,7 +4,8 @@ import BounceCards from './component/BounceCards';
 import ClickSpark from './component/ClickSpark';
 import CountUp from '/src/component/CountUp'
 import './App.css';
-import GhostCursor from '/src/component/GhostCursor'
+import GhostCursor from '/src/component/GhostCursor';
+import TextType from '/src/component/TextType';
 export default function App() {
 
  const images = [
@@ -35,7 +36,19 @@ const transformStyles = [
   duration={400}
 >
   <div className="heading">
-<h1>Hello Chutkuuuuuuuuu....</h1><h1>Mwahhhhhhhhhhhh</h1>
+<TextType 
+  text={["Happy 12 Months Chutku", "12 Months...", "Oh Wait....","Its been a year???","Already?????","Happy one year anniversary my love<3","I LOVE YOU SOOO MUCHHH!","MWAHHHHHHHHHHHH"]}
+  typingSpeed={50}
+  pauseDuration={1500}
+  showCursor
+  cursorCharacter="_"
+  texts={[""]}
+  deletingSpeed={50}
+  variableSpeedEnabled={false}
+  variableSpeedMin={60}
+  variableSpeedMax={120}
+  cursorBlinkDuration={0.5}
+/>
   </div>
     
     <BounceCards
@@ -53,12 +66,12 @@ const transformStyles = [
 </ClickSpark>
 <CountUp
   from={0}
-  to={365}
+  to={366}
   separator=","
   direction="up"
-  duration={1}
+  duration={10}
   className="count-up-text"
-  delay={0}
+  delay={5}
 />
 
 <div className='note' style={{ height: 600, position: 'relative'}}>
@@ -76,7 +89,7 @@ const transformStyles = [
     // Post-processing
     grSainIntensity={0.1}
     bloomStrength={0.5}
-    bloomRadius={1}
+    bloomRadius={2}
     bloomThreshold={0.025}
 
     // Fade-out behavior
