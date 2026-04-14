@@ -4,6 +4,7 @@ import BounceCards from './component/BounceCards';
 import ClickSpark from './component/ClickSpark';
 import CountUp from '/src/component/CountUp'
 import './App.css';
+import GhostCursor from '/src/component/GhostCursor'
 export default function App() {
 
  const images = [
@@ -15,16 +16,16 @@ export default function App() {
 ];
 
 const transformStyles = [
-  "rotate(5deg) translate(-150px)",
-  "rotate(0deg) translate(-70px)",
+  "rotate(5deg) translate(-100px)",
+  "rotate(0deg) translate(-55px)",
   "rotate(-5deg)",
-  "rotate(5deg) translate(70px)",
-  "rotate(-5deg) translate(150px)"
+  "rotate(5deg) translate(55px)",
+  "rotate(-5deg) translate(100px)"
 ]; 
 
 
   return (
-    <div>
+    <div className='main'>
  <ClickSpark
     className="click"
   sparkColor='#f900a2'
@@ -33,13 +34,15 @@ const transformStyles = [
   sparkCount={8}
   duration={400}
 >
-  
-    <h1>Hello Chutkuuuuuuuuu....</h1><h1>Mwahhhhhhhhhhhh</h1>
+  <div className="heading">
+<h1>Hello Chutkuuuuuuuuu....</h1><h1>Mwahhhhhhhhhhhh</h1>
+  </div>
+    
     <BounceCards
   className="custom-bounceCards"
   images={images}
-  containerWidth={500}
-  containerHeight={250}
+  containerWidth={300}
+  containerHeight={150}
   animationDelay={1}
   animationStagger={0.08}
   easeType="elastic.out(1, 0.5)"
@@ -57,6 +60,30 @@ const transformStyles = [
   className="count-up-text"
   delay={0}
 />
+
+<div className='note' style={{ height: 600, position: 'relative'}}>
+ <p className='letter'>my name is ajit</p>
+  <GhostCursor
+    // Visuals
+    color="#ff009d"
+    brightness={10}
+    edgeIntensity={0}
+
+    // Trail and motion
+    trailLength={10}
+    inertia={1}
+
+    // Post-processing
+    grSainIntensity={0.1}
+    bloomStrength={0.5}
+    bloomRadius={1}
+    bloomThreshold={0.025}
+
+    // Fade-out behavior
+    fadeDelayMs={1000}
+    fadeDurationMs={1500}
+  />
+</div>
 
     </div>
    
