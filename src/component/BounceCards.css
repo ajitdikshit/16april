@@ -11,7 +11,7 @@
 
 .card {
   position: absolute;
-  width: 150px;
+  width: 250px;
   aspect-ratio: 1;
   border: 5px solid #2589ee;
   border-radius: 25px;

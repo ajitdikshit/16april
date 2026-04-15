@@ -6,6 +6,8 @@ import CountUp from '/src/component/CountUp'
 import './App.css';
 import GhostCursor from '/src/component/GhostCursor';
 import TextType from '/src/component/TextType';
+import Ribbons from '/src/component/Ribbons';
+import TextCursor from '/src/component/TextCursor';
 export default function App() {
 
  const images = [
@@ -17,11 +19,11 @@ export default function App() {
 ];
 
 const transformStyles = [
-  "rotate(5deg) translate(-100px)",
-  "rotate(0deg) translate(-55px)",
+  "rotate(5deg) translate(-150px)",
+  "rotate(0deg) translate(-75px)",
   "rotate(-5deg)",
-  "rotate(5deg) translate(55px)",
-  "rotate(-5deg) translate(100px)"
+  "rotate(5deg) translate(75px)",
+  "rotate(-5deg) translate(150px)"
 ]; 
 
 
@@ -75,7 +77,18 @@ const transformStyles = [
 />
 
 <div className='note' style={{ height: 600, position: 'relative'}}>
- <p className='letter'>my name is ajit</p>
+ <p className='letter'>I love you so much chutku. Mera pyara sa baby. I looooooooooivveee youuuu sooooo muchhhhh innnnnaaaa saaraaaa . Jitna bhi bolun kam hi hai.<br/>
+
+Honestly, neither u nor me on 16 April,2025 thought we will be going so far in life together. Mai to himmat karra tha aaj ki raat ki kaise batau kaise batau.  I never felt so nervous in my life.
+It was like i wanted you for myself. But still i had to risk our friendship for that. But atill mujhse raha nahi gaya tumhare das baar kehne par bhi mene bol hi dia ki I love you. Tumne mujhe bohot pareshan kia shuruat me i love you na bolke haan. Ab aaj tumko bohot sara ilobu bolna padega sab kuch barabar krne k liye hihihihi.<br/>
+
+I promise mai hamesha tumko aise hi pyaar se rakhunga bohot khush rkhunga. Tumhare liye sab kuch krunga. This one year has made me realise that there is no one actually rooting for you in hr life than ur parents, family and ur partner. I'm very thankful to you for standing with me in the lows of my life.<br/>
+
+I will do my best to keep you happy and safe ur wholeeee life. Ur my baby pyara pyara mwah. I love you so much chutku. Zyada ni likh paunga haan exam bhi hai. Exams k baad jitna nhi likha uske badle me khub sara pyaar krlunga oki. Solly<br/>
+
+I looooooooooivveee youuuu sooooo muchhhhh innnnnaaaa saaraaaa........<br/>
+Be mine forever like im yours....<br/>
+Agar roz pyaar se nini krni h to mere paas to aana hi pdega na bhaag k chutku ko mwah....</p>
   <GhostCursor
     // Visuals
     color="#ff009d"
@@ -96,6 +109,31 @@ const transformStyles = [
     fadeDelayMs={1000}
     fadeDurationMs={1500}
   />
+</div>
+<div style={{ height: '100vh', position: 'relative', overflow: 'hidden'}}>
+  <div className="text">
+    U ARE MINE FOREVER &lt;3 <br/>NEVER LETTING YOU GO<br/>MANY MORE YEARS TO GO MWAH
+  </div>
+  <Ribbons
+    baseThickness={15}
+    colors={["#0078f8","#0051ff","#0019a5"]}
+    speedMultiplier={0.54}
+    maxAge={400}
+    enableFade
+    enableShaderEffect
+  />
+</div>
+<div className="text-cursor">
+  
+  <TextCursor
+  text="Mwah"
+  spacing={80}
+  followMouseDirection
+  randomFloat
+  exitDuration={0.3}
+  removalInterval={20}
+  maxPoints={10}
+/>
 </div>
 
     </div>
