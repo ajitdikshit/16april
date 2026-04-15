@@ -1,8 +1,8 @@
 .heading{
   width: 99vw;
-  height: 100vh;
+  height: 80vh;
   font-family:'CustomFont';
- text-shadow: 0px 0px 10px rgb(255, 0, 157);
+ text-shadow: 0px 0px 10px rgb(255, 255, 255);
   color: rgb(101, 199, 232);
   padding-bottom: 25px;
 background-color: transparent;
@@ -21,7 +21,7 @@ background-color: transparent;
   text-align: center;
 }
 .count-up-text{
-  text-shadow: 0px 0px 10px rgb(255, 0, 157);
+  text-shadow: 0px 0px 10px rgb(255, 255, 255);
   font-family:'CustomFont';
   color: rgb(75, 175, 236);
   font-size: 100px;
@@ -32,6 +32,7 @@ background-color: transparent;
 .custom-bounceCards{
   margin-top: 50px;
   justify-self: center;
+  margin-bottom: 150px;
 }
 .letter{
   margin-top: 5px;
@@ -63,4 +64,10 @@ background-color: transparent;
 .text-cursor{
   height: 500px;
   font-family: 'CustomFont';
+}
+.movie{
+  font-size: 150px;
+  position: absolute;
+color: aliceblue;
+text-shadow: 0px 0px 15px rgb(0, 191, 255);
 }

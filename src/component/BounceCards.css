@@ -16,7 +16,7 @@
   border: 5px solid #2589ee;
   border-radius: 25px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 10px rgb(255, 255, 255);
 }
 
 .card .image {

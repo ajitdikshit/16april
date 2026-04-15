@@ -29,6 +29,15 @@ const transformStyles = [
 
   return (
     <div className='main'>
+      <CountUp
+  from={0}
+  to={366}
+  separator=","
+  direction="up"
+  duration={10}
+  className="count-up-text"
+  delay={5}
+/>
  <ClickSpark
     className="click"
   sparkColor='#f900a2'
@@ -66,15 +75,7 @@ const transformStyles = [
 />
   
 </ClickSpark>
-<CountUp
-  from={0}
-  to={366}
-  separator=","
-  direction="up"
-  duration={10}
-  className="count-up-text"
-  delay={5}
-/>
+
 
 <div className='note' style={{ height: 600, position: 'relative'}}>
  <p className='letter'>I love you so much chutku. Mera pyara sa baby. I looooooooooivveee youuuu sooooo muchhhhh innnnnaaaa saaraaaa . Jitna bhi bolun kam hi hai.<br/>
@@ -124,7 +125,7 @@ Agar roz pyaar se nini krni h to mere paas to aana hi pdega na bhaag k chutku ko
   />
 </div>
 <div className="text-cursor">
-  
+  <div className="movie">WE WILL WATCH HUNDREDS OF MOVIES TOGETHER BTW...</div>
   <TextCursor
   text="Mwah"
   spacing={80}
